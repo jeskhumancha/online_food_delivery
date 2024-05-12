@@ -1,0 +1,222 @@
+
+ /* CSS reset */
+ *{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+ }
+
+ /* navigation bar */
+ #navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top:0px;
+    left: 0px;
+}
+/* navigation bar: Logo and Image */
+#navbar #logo {
+    /* height: 50px; */
+    margin: 10px 34px;
+}
+
+#logo img {
+    height: 47px;
+    margin: 3px 6px;
+}
+/* navigation bar: List Styling */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 3px 20px;
+    color: white;
+    border-radius: 20px;
+}
+#navbar ul li a:hover {
+    background-color: black;
+    color: white;
+    /* border-radius: 8px; */
+    /* margin: 10px; */
+    /* padding: 10px; */
+}
+
+/* Home section */
+#home-container{
+    display: flex;
+    /* margin: 34px; */
+    flex-direction: column;
+    /* border: 2px solid brown; */
+    /* padding: 12px;  */
+    justify-content: center;
+    align-items: center;
+    height: 580px;
+    position: relative;
+}
+#home-container::before{
+    content: "";
+    position: absolute;
+    /* background-color: rgb(196, 130, 246); */
+    background: url('../Bg1.jpeg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+.para-service{
+    padding: 0px 15px;
+}
+#home-container h1{
+    /* color: white; */
+    text-align: center;
+}
+#home-container p{
+    color: black;
+    /* color: blue; */
+    text-align: center;
+    font-size: 1.3rem;
+    /* line-height: 2px; */
+}
+/* #home{
+    width: 989px;
+    display: block;
+    margin: auto;
+    height: 160px;
+    line-height: 15px;
+} */
+
+/* Service section */
+#service{
+    display: flex;
+    margin: 34px;
+}
+#service .box{
+    border: 2px solid brown;
+    /* width: 620px; */
+    padding: 34px;
+    margin: 3px 3px;
+    background: rgb(247, 225, 225);
+    border-radius: 28px;
+}
+#service .box img{
+    /* width: 250px; */
+    display: block;
+    margin: auto;
+    padding: 3px 20px;
+    height: 165px;
+}
+/* Client-section */
+#client-section{
+    height: 500px;
+    margin: 34px;
+    /* border: 2px solid black; */
+}
+#clients{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 390px;
+}
+#clients::before{
+   content: "";
+   position: absolute;
+   background: url('/Bg2.jpg') no-repeat center center/cover;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   opacity: 0.4;
+}
+#clients img{
+    height: 140px;
+    padding: 20px 25px;
+    /* margin: 18px; */
+}
+/* contact us section */
+#contact-section{
+    margin: 34px;
+}
+#contact-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 34px;
+    position: relative;
+}
+#contact-box::before{
+    content: "";
+    position: absolute;
+    background: url('../Bg3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width:40%;
+    font-size: 1.1rem;
+}
+#contact-box label{
+    font-size: 1.1rem;
+    font-family: "Bree Serif", serif;
+}
+/* footer-section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 8px 10px;
+}
+
+/* utility Classes */
+
+.h-primary{
+    font-size: 3.5rem;
+    margin: 3px;
+    font-family: "Bree Serif", serif;
+    padding: 10px;
+}
+.h-secondary{
+    font-family: "Questrial", sans-serif;
+    font-size: 2.5rem;
+    /* margin: 3px; */
+    padding: 10px;
+}
+.center{
+   text-align: center;
+}
+.btn{
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    padding: 6px 20px;
+    margin: 17px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 2px solid black;
+    background-color:green;
+}

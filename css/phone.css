@@ -1,0 +1,31 @@
+/* navigation */
+#navbar{
+    flex-direction: column;
+}
+/* Home */
+#home-container h1 {
+    font-size: 3.0rem;
+}
+
+/* Services */
+#service{
+    flex-direction: column;
+}
+#service .box img {
+    height: 132px;
+}
+/* Clients */
+#client{
+    overflow: hidden;
+}
+#clients img {
+    height: 60px;
+    display: flex;
+}
+/* Contact us */
+
+/* footer */
+/* Utility */
+::placeholder{
+    font-size: 0.67rem;
+}
